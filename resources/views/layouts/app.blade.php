@@ -233,7 +233,7 @@
         // Enable pusher logging - don't include this in production
         Pusher.logToConsole = true;
 
-        var pusher = new Pusher('49f3ba8c9d3adab2613e', {
+        var pusher = new Pusher('fed25626410c4724a642', {
             cluster: 'ap2',
             forceTLS: true
         });
@@ -241,6 +241,7 @@
         var channel = pusher.subscribe('my-channel');
         channel.bind('my-event', function (data) {
             // alert(JSON.stringify(data));
+            console.log(data);
             if (my_id == data.from) {
                 $('#' + data.to).click();
             } else if (my_id == data.to) {

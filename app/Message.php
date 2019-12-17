@@ -2,9 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Message extends Model
+class Message extends Eloquent
 {
+    protected $connection = 'mongodb';
     protected $fillable = ['from', 'to', 'message', 'is_read'];
 }
