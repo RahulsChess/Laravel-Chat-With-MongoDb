@@ -5,7 +5,7 @@ Very simple php based chatting application
 # Installation
 1. Clone this repo
 ```
-https://github.com/samironbarai/laravel_chat
+https://github.com/RahulsChess/Laravel-Chat-With-MongoDb.git
 ```
 
 2. Install composer packages
